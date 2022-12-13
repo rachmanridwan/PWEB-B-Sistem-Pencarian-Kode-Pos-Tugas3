@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zip/Postal Code Indonesia</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header align="center">
+      <h1>Zip/Postal Code Indonesia</h1>
+    </header>
+    <div class="container">
+      <div class="form-container">
+        <form align="center">
+          <input class="form" id="search" name="search" type="search" placeholder="Masukkan Provinsi/Kota/Kecamatan/Kodepos" />
+          <datalist id="searchHelper"></datalist>
+        </form>
+        <button class="button" id="searchButton">Cari</button>
+      </div>
+    </div>
+    <div align="center" id="searchResult">
+      <?php include('loader01.html'); ?>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
